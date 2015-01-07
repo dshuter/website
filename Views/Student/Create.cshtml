@@ -1,0 +1,62 @@
+﻿@model AnotherProject.Models.Student
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Student</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SFirst, new { @class = "control-label col-md-2" })
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SFirst)
+            @Html.ValidationMessageFor(model => model.SFirst)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SLast)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SLast)
+            @Html.ValidationMessageFor(model => model.SLast)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Age)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Age)
+            @Html.ValidationMessageFor(model => model.Age)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Doctor)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Doctor)
+            @Html.ValidationMessageFor(model => model.Doctor)
+        </div>
+
+     
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

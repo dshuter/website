@@ -1,0 +1,39 @@
+﻿@model AnotherProject.Models.Game
+
+
+@{
+    ViewBag.Title = "SampleGame";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SampleGame</title>
+</head>
+<body>
+    <div>
+        Game Info
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.FirstN, new { @class = "control-label col-md-2" })
+        </div>
+        <ol>
+
+            @Html.LabelFor(model => model.ID)
+            @Html.DisplayFor(model => model.ID)
+
+
+
+            @Html.DisplayFor(model => model.FirstN)
+            @Html.DisplayFor(model => model.Faction)
+            @Html.DisplayFor(model => model.LastN)
+            @Html.DisplayFor(model => model.Health)
+
+        </ol>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿@model AnotherProject.Models.Game
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="Site.css" />
+    <title>SampleGame</title>
+</head>
+<body>
+    <div>
+        Game Info
+
+
+        <ol>
+
+            @Html.LabelFor(model => model.ID)
+            @Html.DisplayFor(model => model.ID)
+
+
+
+            @Html.DisplayFor(model => model.FirstN)
+            @Html.DisplayFor(model => model.Faction)
+            @Html.DisplayFor(model => model.LastN)
+            @Html.DisplayFor(model => model.Health)
+
+        </ol>
+
+
+        <button onclick="cookieClick(1)">Click Me!</button>
+        <br />
+        Cookies: <span id="cookies">0</span>
+        <br />
+        <button onclick="buyCursor()">Buy Cursor</button>
+        <br />
+        Cursors: <span id="cursors">0</span>
+        <br />
+        Cursor Cost: <span id="cursorCost">10</span>
+        </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jquerymai")
+}
