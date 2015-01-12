@@ -36,6 +36,13 @@
             @Html.EditorFor(model => model.Price)
             @Html.ValidationMessageFor(model => model.Price)
         </div>
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SubProducts.NewSubProductName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SubProducts.NewSubProductName)
+            @Html.ValidationMessageFor(model => model.SubProducts)
+        </div>
 
         <p>
             <input type="submit" value="Create" />
