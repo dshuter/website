@@ -14,14 +14,14 @@
         <legend>BlogModel</legend>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.BlogTitle, new { @class = "control-label col-md-2"})
+            @Html.LabelFor(model => model.BlogTitle)
             <div class="col-md-10">
                 @Html.EditorFor(model => Model.BlogTitle)
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.BlogPost, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.BlogPost)
             <div class="col-md-10">
                 @Html.EditorFor(model => Model.BlogPost)
             </div>

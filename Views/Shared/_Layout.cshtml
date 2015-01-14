@@ -2,13 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <title>@ViewBag.Title - Damon Shuter</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")
         <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fdamonshuter.com&amp;width=100&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:80px;" allowtransparency="true"></iframe>
-    </head>
+       
+        <meta name="description" content="Damon Shuter" />
+</head>
     <body>
        
         
@@ -31,13 +33,10 @@
                             <li>@Html.ActionLink("Student", "Index", "Student")</li>
                             <li>@Html.ActionLink("Game", "SampleGame", "Game")</li>
                             <li>@Html.ActionLink("Coming Soon", "Addtowebsite", "Home")</li>
-                            <li>
-                                @Html.ActionLink("Blog", "Blog", "Blog")
-                                <ul>
-                                    <li><a href="#">C#</a></li>
-                                </ul>
+                            <li> @Html.ActionLink("Blog", "Index", "Blog") </li>
                             <li>@Html.ActionLink("New Products", "Index", "Product")</li>
-                            </li> 
+                            <li>@Html.ActionLink("Reports", "Index", "Home")</li>
+                           
                               
 
                         </ul>
